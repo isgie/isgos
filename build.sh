@@ -14,19 +14,11 @@ set -ouex pipefail
 remove_pkgs=(
 	firefox
 	firefox-langpacks
-	vim
 )
 dnf remove -y ${remove_pkgs[@]}
 
 install_pkgs=(
-	android-udev-rules
-	distrobox
-	duplicity
-	fzf
-	htop
 	neovim
-	solaar-udev
-	wl-clipboard
 )
 dnf install -y ${install_pkgs[@]}
 
