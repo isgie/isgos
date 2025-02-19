@@ -22,6 +22,8 @@ install_pkgs=(
 )
 dnf install -y ${install_pkgs[@]}
 
+dnf remove -y tmux # Test.
+
 # Use a COPR Example:
 #
 # dnf5 -y copr enable ublue-os/staging
