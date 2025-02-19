@@ -14,6 +14,7 @@ set -ouex pipefail
 remove_pkgs=(
 	firefox
 	firefox-langpacks
+	tmux
 )
 dnf remove -y ${remove_pkgs[@]}
 
@@ -21,8 +22,6 @@ install_pkgs=(
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
-
-dnf remove -y tmux # Test.
 
 # Use a COPR Example:
 #
