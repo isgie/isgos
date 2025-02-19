@@ -14,39 +14,7 @@ set -ouex pipefail
 remove_pkgs=(
 	firefox
 	firefox-langpacks
-	flatpak-spawn
-	google-noto-sans-balinese-fonts
-	google-noto-sans-cjk-fonts
-	google-noto-sans-javanese-fonts
-	google-noto-sans-sundanese-fonts
-	grub2-tools-extra
-	intel-vaapi-driver
-	libcamera
-	libcamera-gstreamer
-	libcamera-ipa
-	libcamera-tools
-	libratbag-ratbagd
-	libva-utils
-	lshw
-	net-tools
-	nvme-cli
-	nvtop
-	openrgb-udev-rules
-	oversteer-udev
-	pam-u2f
-	pam_yubico
-	pamu2fcfg
-	pipewire-libs-extra
-	pipewire-plugin-libcamera
-	powerstat
-	smartmontools
-	squashfs-tools
-	symlinks
-	tcpdump
-	tmux
-	traceroute
 	vim
-	wireguard-tools
 )
 dnf remove -y ${remove_pkgs[@]}
 
