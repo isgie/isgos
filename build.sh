@@ -12,7 +12,6 @@ set -ouex pipefail
 # this installs a package from fedora repos
 
 remove_pkgs=(
-	alsa-firmware
 	firefox
 	firefox-langpacks
 	flatpak-spawn
@@ -22,7 +21,6 @@ remove_pkgs=(
 	google-noto-sans-sundanese-fonts
 	grub2-tools-extra
 	intel-vaapi-driver
-	just
 	libcamera
 	libcamera-gstreamer
 	libcamera-ipa
