@@ -18,6 +18,7 @@ remove_pkgs=(
 	google-noto-sans-cjk-fonts
 	google-noto-sans-javanese-fonts
 	google-noto-sans-sundanese-fonts
+	intel-vaapi-driver
 	nvtop
 	tmux
 )
