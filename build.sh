@@ -21,6 +21,7 @@ dnf remove -y ${remove_pkgs[@]}
 install_pkgs=(
 	adw-gtk3-theme
 	android-udev-rules
+	ddcutil
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
