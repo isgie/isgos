@@ -14,6 +14,10 @@ set -ouex pipefail
 remove_pkgs=(
 	firefox
 	firefox-langpacks
+	google-noto-sans-balinese-fonts
+	google-noto-sans-cjk-fonts
+	google-noto-sans-javanese-fonts
+	google-noto-sans-sundanese-fonts
 	nvtop
 	tmux
 )
