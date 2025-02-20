@@ -14,6 +14,7 @@ set -ouex pipefail
 remove_pkgs=(
 	firefox
 	firefox-langpacks
+	gnome-tour
 )
 dnf remove -y ${remove_pkgs[@]}
 
