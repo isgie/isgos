@@ -24,6 +24,7 @@ install_pkgs=(
 	ddcutil
 	gamemode
 	gnome-shell-extension-gamemode
+	gnome-tweaks
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
