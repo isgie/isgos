@@ -19,6 +19,7 @@ remove_pkgs=(
 dnf remove -y ${remove_pkgs[@]}
 
 install_pkgs=(
+	adw-gtk3-theme
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
