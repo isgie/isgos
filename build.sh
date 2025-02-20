@@ -14,11 +14,19 @@ set -ouex pipefail
 remove_pkgs=(
 	firefox
 	firefox-langpacks
+	gnome-shell-extension-background-logo
+	gnome-software-rpm-ostree
 	gnome-tour
 )
 dnf remove -y ${remove_pkgs[@]}
 
 install_pkgs=(
+	adw-gtk3-theme
+	ddcutil
+	distrobox
+	gamemode
+	gnome-shell-extension-gamemode
+	gnome-tweaks
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
