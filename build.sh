@@ -22,6 +22,8 @@ install_pkgs=(
 	adw-gtk3-theme
 	android-udev-rules
 	ddcutil
+	gamemode
+	gnome-shell-extension-gamemode
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
