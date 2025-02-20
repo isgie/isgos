@@ -15,6 +15,7 @@ remove_pkgs=(
 	firefox
 	firefox-langpacks
 	gnome-shell-extension-background-logo
+	gnome-software-rpm-ostree
 	gnome-tour
 )
 dnf remove -y ${remove_pkgs[@]}
