@@ -2,31 +2,22 @@
 
 set -ouex pipefail
 
-### Install packages
-
-# Packages can be installed from any enabled yum repo on the image.
-# RPMfusion repos are available by default in ublue main images
-# List of rpmfusion packages can be found here:
-# https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
-
-# this installs a package from fedora repos
+# Configure packages.
 
 remove_pkgs=(
 	firefox
 	firefox-langpacks
-	gnome-shell-extension-background-logo
-	gnome-software-rpm-ostree
-	gnome-tour
+	google-noto-sans-balinese-fonts
+	google-noto-sans-cjk-fonts
+	google-noto-sans-javanese-fonts
+	google-noto-sans-sundanese-fonts
+	intel-vaapi-driver
+	nvtop
+	tmux
 )
 dnf remove -y ${remove_pkgs[@]}
 
 install_pkgs=(
-	adw-gtk3-theme
-	ddcutil
-	distrobox
-	gamemode
-	gnome-shell-extension-gamemode
-	gnome-tweaks
 	neovim
 )
 dnf install -y ${install_pkgs[@]}
