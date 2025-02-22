@@ -4,17 +4,24 @@ set -ouex pipefail
 
 # Configure packages.
 
-remove_pkgs=(
-	firefox
-	firefox-langpacks
+noto_fonts=(
 	google-noto-sans-balinese-fonts
 	google-noto-sans-cjk-fonts
 	google-noto-sans-javanese-fonts
 	google-noto-sans-sundanese-fonts
+)
+
+vim=( vim vim-{common,data,enhanced,filesystem,minimal} )
+
+remove_pkgs=(
+	firefox
+	firefox-langpacks
 	gnome-tour
 	intel-vaapi-driver
 	nvtop
 	tmux
+	${noto_fonts[@]}
+	${vim[@]}
 )
 dnf remove -y ${remove_pkgs[@]}
 
