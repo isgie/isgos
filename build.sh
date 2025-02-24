@@ -4,17 +4,25 @@ set -ouex pipefail
 
 # Configure packages.
 
+noto_fonts=( google-noto-sans-{balinese,cjk,javanese,sundanese}-fonts )
+
+vim=( vim vim-{common,data,enhanced,filesystem,minimal} )
+
+keys=( pam-u2f pam_yubico pamu2fcfg yubikey-manager )
+
+udev=( openrgb-udev-rules oversteer-udev )
+
 remove_pkgs=(
 	firefox
 	firefox-langpacks
-	google-noto-sans-balinese-fonts
-	google-noto-sans-cjk-fonts
-	google-noto-sans-javanese-fonts
-	google-noto-sans-sundanese-fonts
 	gnome-tour
 	intel-vaapi-driver
 	nvtop
 	tmux
+	${keys[@]}
+	${noto_fonts[@]}
+	${udev[@]}
+	${vim[@]}
 )
 dnf remove -y ${remove_pkgs[@]}
 
