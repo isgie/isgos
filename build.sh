@@ -8,6 +8,8 @@ noto_fonts=( google-noto-sans-{balinese,cjk,javanese,sundanese}-fonts )
 
 vim=( vim vim-{common,data,enhanced,filesystem,minimal} )
 
+keys=( pam-u2f pam_yubico pamu2fcfg yubikey-manager )
+
 remove_pkgs=(
 	firefox
 	firefox-langpacks
@@ -15,6 +17,7 @@ remove_pkgs=(
 	intel-vaapi-driver
 	nvtop
 	tmux
+	${keys[@]}
 	${noto_fonts[@]}
 	${vim[@]}
 )
