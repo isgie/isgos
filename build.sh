@@ -4,12 +4,7 @@ set -ouex pipefail
 
 # Configure packages.
 
-noto_fonts=(
-	google-noto-sans-balinese-fonts
-	google-noto-sans-cjk-fonts
-	google-noto-sans-javanese-fonts
-	google-noto-sans-sundanese-fonts
-)
+noto_fonts=( google-noto-sans-{balinese,cjk,javanese,sundanese}-fonts )
 
 vim=( vim vim-{common,data,enhanced,filesystem,minimal} )
 
